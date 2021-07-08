@@ -10,6 +10,6 @@ res.sendFile(path.join(__dirname,'build/index.html'))
 
 });
 
-app.set('port',port);
-const server = http.createServer(app);
-server.listen(port);
+app.listen(port,(err)=>{
+  if(err) throw err;
+})
