@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.eve.PORT||9800;
+const port = process.env.PORT||9800;
 const http = require('http');
 
 app.use(express.static(path.join(__dirname,'build')));
